@@ -46,7 +46,7 @@ public class UserService implements IUserService{
 
 	/**
 	* Method : getUserPagingList
-	* 작성자 : SEM-PC
+	* 작성자 : PC-02
 	* 변경이력 :
 	* @param sqlSession
 	* @param page
@@ -68,7 +68,7 @@ public class UserService implements IUserService{
 
 	/**
 	* Method : insertUser
-	* 작성자 : SEM-PC
+	* 작성자 : PC-02
 	* 변경이력 :
 	* @param user
 	* Method 설명 : 사용자 등록
@@ -80,7 +80,6 @@ public class UserService implements IUserService{
 		// . 예외가 발생 했을때 정상적으로 rollback이 되는지
 		// . 예외가 발생하지 않고 정상적으로 코드가 실행되었을 때
 		//   명시적인 commit없는데 commit이 정상적으로 되는지 
-		userDao.insertUser(user);
 		return userDao.insertUser(user);
 		/*int insertCnt = userDao.insertUser(sqlSession, user);
 		
@@ -92,7 +91,7 @@ public class UserService implements IUserService{
 
 	/**
 	* Method : deleteUser
-	* 작성자 : SEM-PC
+	* 작성자 : PC-02
 	* 변경이력 :
 	* @param userId
 	* Method 설명 : 사용자 삭제
@@ -111,7 +110,7 @@ public class UserService implements IUserService{
 
 	/**
 	* Method : updateUser
-	* 작성자 : SEM-PC
+	* 작성자 : PC-02
 	* 변경이력 :
 	* @param user
 	* @return

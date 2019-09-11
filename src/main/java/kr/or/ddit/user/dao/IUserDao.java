@@ -9,7 +9,7 @@ public interface IUserDao {
 	
 	/**
 	* Method : getUserList
-	* 작성자 : SEM-PC
+	* 작성자 : PC-02
 	* 변경이력 :
 	 * @param sqlSession 
 	* @return
@@ -19,7 +19,7 @@ public interface IUserDao {
 
 	/**
 	* Method : getUser
-	* 작성자 : SEM-PC
+	* 작성자 : PC-02
 	* 변경이력 :
 	 * @param sqlSession 
 	* @param userId
@@ -30,7 +30,7 @@ public interface IUserDao {
 
 	/**
 	* Method : getUserListOnlyHalf
-	* 작성자 : SEM-PC
+	* 작성자 : PC-02
 	* 변경이력 :
 	 * @param sqlSession 
 	* @return
@@ -40,7 +40,7 @@ public interface IUserDao {
 
 	/**
 	* Method : getUserPagingList
-	* 작성자 : SEM-PC
+	* 작성자 : PC-02
 	* 변경이력 :
 	* @param sqlSession
 	* @param page
@@ -51,7 +51,7 @@ public interface IUserDao {
 	
 	/**
 	* Method : getUserTotalCnt
-	* 작성자 : SEM-PC
+	* 작성자 : PC-02
 	* 변경이력 :
 	* @param sqlSession
 	* @return
@@ -61,7 +61,7 @@ public interface IUserDao {
 	
 	/**
 	* Method : insertUser
-	* 작성자 : SEM-PC
+	* 작성자 : PC-02
 	* 변경이력 :
 	* @param sqlSession
 	* @param user
@@ -72,7 +72,7 @@ public interface IUserDao {
 	
 	/**
 	* Method : deleteUser
-	* 작성자 : SEM-PC
+	* 작성자 : PC-02
 	* 변경이력 :
 	* @param sqlSession
 	* @param userId
@@ -83,7 +83,7 @@ public interface IUserDao {
 
 	/**
 	* Method : updateUser
-	* 작성자 : SEM-PC
+	* 작성자 : PC-02
 	* 변경이력 :
 	* @param user
 	* @return

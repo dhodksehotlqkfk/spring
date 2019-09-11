@@ -10,7 +10,7 @@ public interface IUserService {
 
 	/**
 	* Method : getUserList
-	* 작성자 : SEM-PC
+	* 작성자 : PC-02
 	* 변경이력 :
 	* @return
 	* Method 설명 :전체 사용자 리스트 조회
@@ -19,7 +19,7 @@ public interface IUserService {
 
 	/**
 	* Method : getUser
-	* 작성자 : SEM-PC
+	* 작성자 : PC-02
 	* 변경이력 :
 	* @param userId
 	* @return
@@ -29,7 +29,7 @@ public interface IUserService {
 
 	/**
 	* Method : getUserListOnlyHalf
-	* 작성자 : SEM-PC
+	* 작성자 : PC-02
 	* 변경이력 :
 	* @return
 	* Method 설명 : 사용자 리스트중 50명임의 조회
@@ -38,7 +38,7 @@ public interface IUserService {
 
 	/**
 	* Method : getUserPagingList
-	* 작성자 : SEM-PC
+	* 작성자 : PC-02
 	* 변경이력 :
 	* @param sqlSession
 	* @param page
@@ -49,7 +49,7 @@ public interface IUserService {
 
 	/**
 	* Method : insertUser
-	* 작성자 : SEM-PC
+	* 작성자 : PC-02
 	* 변경이력 :
 	* @param user
 	* Method 설명 : 사용자 등록
@@ -58,7 +58,7 @@ public interface IUserService {
 	
 	/**
 	* Method : deleteUser
-	* 작성자 : SEM-PC
+	* 작성자 : PC-02
 	* 변경이력 :
 	* @param userId
 	* Method 설명 : 사용자 삭제
@@ -67,7 +67,7 @@ public interface IUserService {
 
 	/**
 	* Method : updateUser
-	* 작성자 : SEM-PC
+	* 작성자 : PC-02
 	* 변경이력 :
 	* @param user
 	* @return

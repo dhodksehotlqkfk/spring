@@ -21,7 +21,7 @@ public class UserDao implements IUserDao{
 
 	/**
 	* Method : getUserList
-	* 작성자 : SEM-PC
+	* 작성자 : PC-02
 	* 변경이력 :
 	* @return
 	* Method 설명 : 사용자 전체 리스트 조회
@@ -33,7 +33,7 @@ public class UserDao implements IUserDao{
 
 	/**
 	* Method : getUser
-	* 작성자 : SEM-PC
+	* 작성자 : PC-02
 	* 변경이력 :
 	* @param userId
 	* @return
@@ -46,7 +46,7 @@ public class UserDao implements IUserDao{
 
 	/**
 	* Method : getUserListOnlyHalf
-	* 작성자 : SEM-PC
+	* 작성자 : PC-02
 	* 변경이력 :
 	* @return
 	* Method 설명 : 사용자 리스트중 50명임의 조회
@@ -58,7 +58,7 @@ public class UserDao implements IUserDao{
 
 	/**
 	* Method : getUserPagingList
-	* 작성자 : SEM-PC
+	* 작성자 : PC-02
 	* 변경이력 :
 	* @param sqlSession
 	* @param page
@@ -72,7 +72,7 @@ public class UserDao implements IUserDao{
 
 	/**
 	* Method : getUserTotalCnt
-	* 작성자 : SEM-PC
+	* 작성자 : PC-02
 	* 변경이력 :
 	* @param sqlSession
 	* @return
@@ -85,7 +85,7 @@ public class UserDao implements IUserDao{
 
 	/**
 	* Method : insertUser
-	* 작성자 : SEM-PC
+	* 작성자 : PC-02
 	* 변경이력 :
 	* @param sqlSession
 	* @param user
@@ -99,7 +99,7 @@ public class UserDao implements IUserDao{
 
 	/**
 	* Method : deleteUser
-	* 작성자 : SEM-PC
+	* 작성자 : PC-02
 	* 변경이력 :
 	* @param sqlSession
 	* @param userId
@@ -113,7 +113,7 @@ public class UserDao implements IUserDao{
 
 	/**
 	* Method : updateUser
-	* 작성자 : SEM-PC
+	* 작성자 : PC-02
 	* 변경이력 :
 	* @param user
 	* @return

@@ -38,7 +38,7 @@ public class UserServiceTest {
 	
 	/**
 	* Method : getUserListTest
-	* 작성자 : SEM-PC
+	* 작성자 : PC-02
 	* 변경이력 :
 	* Method 설명 : getUserList 테스트
 	*/
@@ -55,7 +55,7 @@ public class UserServiceTest {
 	
 	/**
 	* Method : getUserTest
-	* 작성자 : SEM-PC
+	* 작성자 : PC-02
 	* 변경이력 :
 	* Method 설명 : 사용자 정보 조회 테스트
 	*/
@@ -74,7 +74,7 @@ public class UserServiceTest {
 	
 	/**
 	* Method : getUserListOnlyHalfTest
-	* 작성자 : SEM-PC
+	* 작성자 : PC-02
 	* 변경이력 :
 	* Method 설명 : 사용자 리스트 절반 조회 테스트
 	*/
@@ -91,7 +91,7 @@ public class UserServiceTest {
 	
 	/**
 	* Method : getUserPagingListTest
-	* 작성자 : SEM-PC
+	* 작성자 : PC-02
 	* 변경이력 :
 	* Method 설명 : 사용자 페이징 리스트 조회 테스트
 	*/
@@ -128,7 +128,7 @@ public class UserServiceTest {
 	
 	/**
 	* Method : insertUserTest
-	* 작성자 : SEM-PC
+	* 작성자 : PC-02
 	* 변경이력 :
 	* Method 설명 : 사용자 등록 테스트
 	 * @throws ParseException 
@@ -146,6 +146,8 @@ public class UserServiceTest {
 		user.setAddr1("대전광역시 중구 중앙로 76");
 		user.setAddr2("영민빌딩 2층 DDIT");
 		user.setZipcode("34940");
+		user.setFilename("");
+		user.setRealfilename("");
 		
 		/***When***/
 		int insertCnt = userService.insertUser(user);
@@ -157,7 +159,7 @@ public class UserServiceTest {
 	
 	/**
 	* Method : updateUserTest
-	* 작성자 : SEM-PC
+	* 작성자 : PC-02
 	* 변경이력 :
 	* @throws ParseException
 	* Method 설명 : 사용자 정보 수정 테스트
