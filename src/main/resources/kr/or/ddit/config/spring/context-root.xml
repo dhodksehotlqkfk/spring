@@ -8,5 +8,7 @@
 	<!-- service, dao scan(스프링 빈 스캔) -->
 	<context:component-scan base-package="kr.or.ddit">
 	</context:component-scan>
+	
+	<context:annotation-config/>
 
 </beans>
