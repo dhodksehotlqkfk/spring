@@ -5,7 +5,7 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 
-	<!-- service, dao scan -->
+	<!-- service, dao scan(스프링 빈 스캔) -->
 	<context:component-scan base-package="kr.or.ddit">
 	</context:component-scan>
 

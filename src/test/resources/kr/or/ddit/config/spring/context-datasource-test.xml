@@ -7,7 +7,7 @@
 
 	<!-- db연결 -->
 
-	<context:property-placeholder location="classpath:kr/or/ddit/config/mybatis/db.properties"/>
+	<context:property-placeholder location="classpath:kr/or/ddit/config/mybatis/db-test.properties"/>
 
 	<bean name="datasource" class="org.apache.commons.dbcp2.BasicDataSource">
 		<property name="driverClassName" value="${jdbc.driver}"></property>
