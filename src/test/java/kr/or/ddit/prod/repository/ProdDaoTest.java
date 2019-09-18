@@ -18,7 +18,7 @@ public class ProdDaoTest extends RootTestConfig{
 	
 	/**
 	* Method : testGetProdList
-	* 작성자 : SEM-PC
+	* 작성자 : PC-02
 	* 변경이력 :
 	* Method 설명 : 제품 리스트 조회 테스트
 	*/

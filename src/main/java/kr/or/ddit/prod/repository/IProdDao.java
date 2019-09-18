@@ -8,7 +8,7 @@ public interface IProdDao {
 	
 	/**
 	* Method : getProdList
-	* 작성자 : SEM-PC
+	* 작성자 : PC-02
 	* 변경이력 :
 	* @param lprod_gu
 	* @return

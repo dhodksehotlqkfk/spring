@@ -9,7 +9,7 @@ public interface ILprodDao {
 
 	/**
 	* Method : getLprodList
-	* 작성자 : SEM-PC
+	* 작성자 : PC-02
 	* 변경이력 :
 	* @return
 	* Method 설명 : 제품 그룹 리스트 조회
@@ -18,7 +18,7 @@ public interface ILprodDao {
 
 	/**
 	* Method : getLprodPagingList
-	* 작성자 : SEM-PC
+	* 작성자 : PC-02
 	* 변경이력 :
 	* @param sqlSession
 	* @param page
@@ -29,7 +29,7 @@ public interface ILprodDao {
 
 	/**
 	* Method : getLprodTotalCnt
-	* 작성자 : SEM-PC
+	* 작성자 : PC-02
 	* 변경이력 :
 	* @param sqlSession
 	* @return

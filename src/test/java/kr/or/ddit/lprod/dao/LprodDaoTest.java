@@ -23,7 +23,7 @@ public class LprodDaoTest extends RootTestConfig{
 	
 	/**
 	* Method : getLpordListTest
-	* 작성자 : SEM-PC
+	* 작성자 : PC-02
 	* 변경이력 :
 	* Method 설명 : 제품 그룹 리스트 조회 테스트
 	*/
@@ -40,7 +40,7 @@ public class LprodDaoTest extends RootTestConfig{
 	
 	/**
 	* Method : getLprodPagingListTest
-	* 작성자 : SEM-PC
+	* 작성자 : PC-02
 	* 변경이력 :
 	* Method 설명 : 제품 그룹 페이징 리스트 조회 테스트
 	*/
@@ -60,7 +60,7 @@ public class LprodDaoTest extends RootTestConfig{
 	
 	/**
 	* Method : getLprodTotalCnt
-	* 작성자 : SEM-PC
+	* 작성자 : PC-02
 	* 변경이력 :
 	* Method 설명 : 제품그룹 리스트 전체 건수 조회
 	*/

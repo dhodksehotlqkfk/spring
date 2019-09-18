@@ -17,7 +17,7 @@ public class LprodDao implements ILprodDao {
 	private SqlSessionTemplate sqlSession;
 	/**
 	* Method : getLprodList
-	* 작성자 : SEM-PC
+	* 작성자 : PC-02
 	* 변경이력 :
 	* @return
 	* Method 설명 : 제품 그룹 리스트 조회
@@ -29,7 +29,7 @@ public class LprodDao implements ILprodDao {
 
 	/**
 	* Method : getLprodPagingList
-	* 작성자 : SEM-PC
+	* 작성자 : PC-02
 	* 변경이력 :
 	* @param sqlSession
 	* @param page
@@ -43,7 +43,7 @@ public class LprodDao implements ILprodDao {
 
 	/**
 	* Method : getLprodTotalCnt
-	* 작성자 : SEM-PC
+	* 작성자 : PC-02
 	* 변경이력 :
 	* @param sqlSession
 	* @return
