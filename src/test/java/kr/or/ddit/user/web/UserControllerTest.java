@@ -141,6 +141,10 @@ public class UserControllerTest extends WebTestConfig{
 	}
 	
 	//사용자 수정화면 요청 테스트
+	@Test
+	public void userModifyTest() {
+		
+	}
 	
 	//사용자 수정 요청 테스트
 }
