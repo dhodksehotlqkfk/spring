@@ -40,7 +40,7 @@
 	<!-- 사용자 등록 -->
 	<insert id="insertUser" parameterType="user">
 		insert into users (userId, userNm, pass, reg_dt, alias, addr1, addr2, zipcode, filename, realfilename)
-			values(#{userId}, #{userNm}, #{pass}, #{reg_dt}, #{alias}, #{addr1}, #{addr2}, #{zipcode}, #{filename}, #{realfilename})
+			values(#{userId}, #{userNm}, #{pass}, #{reg_dt}, #{alias}, #{addr1}, #{addr2}, #{zipcode}, #{filename, jdbcType=VARCHAR}, #{realfilename, jdbcType=VARCHAR})
 	</insert>
 	
 	<!-- 사용자 삭제 -->
@@ -49,6 +49,7 @@
 	</delete>
 	
 	<!-- 사용자 수정 -->
+	<!-- filename과 realfilename의 쿼리문은 둘다 가능한 것(nvl을 넣어도 되고 안넣어도 되고) -->
 	<update id="updateUser" parameterType="user">
 		update users set userNm = #{userNm}, 
 						pass = #{pass}, 
@@ -57,8 +58,8 @@
 						addr1 = #{addr1}, 
 						addr2 = #{addr2},
 						zipcode = #{zipcode}, 
-						filename = nvl(#{filename}, filename), 
-						realfilename = nvl(#{realfilename}, realfilename)
+						filename = #{filename, jdbcType=VARCHAR}, 
+						realfilename = nvl(#{realfilename, jdbcType=VARCHAR}, realfilename)
 		where userId = #{userId}
 	</update>
 </mapper>

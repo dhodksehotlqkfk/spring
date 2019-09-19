@@ -58,7 +58,7 @@ $(document).ready(function(){
 </head>
 
 <body>
-<form id="frm" action="${cp }/user" method="get">
+<form id="frm" action="${cp }/user/user" method="get">
 	<input type="hidden" id="userId" name="userId" />
 </form>
 	
