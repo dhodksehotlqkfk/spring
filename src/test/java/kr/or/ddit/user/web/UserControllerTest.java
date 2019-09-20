@@ -9,6 +9,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.IOException;
 
 import org.junit.Test;
 import org.springframework.mock.web.MockMultipartFile;
@@ -142,9 +143,35 @@ public class UserControllerTest extends WebTestConfig{
 	
 	//사용자 수정화면 요청 테스트
 	@Test
-	public void userModifyTest() {
-		
+	public void userModifyViewTest() throws Exception {
+		/***Given***/
+
+		/***When***/
+		mockMvc.perform(get("/user/userModify").param("userId", "sally"))
+				.andExpect(model().attributeExists("user"))
+				.andExpect(view().name("user/userModify"));
+
+		/***Then***/
 	}
 	
 	//사용자 수정 요청 테스트
+	@Test
+	public void userModifyTest() throws Exception {
+		File f = new File("src/test/resources/kr/or/ddit/test/sally.png");
+		FileInputStream fis = new FileInputStream(f);
+		
+		MockMultipartFile file = new MockMultipartFile("picture", "sally.png", "", fis);
+		
+		mockMvc.perform(fileUpload("/user/userModify")
+						.file(file)
+						.param("userId", "sally")
+						.param("userNm", "샐리")
+						.param("alias", "병아리")
+						.param("reg_dt", "2019-08-14")
+						.param("addr1", "대전광역시 중구 중앙로 76")
+						.param("addr2", "빌딩 2층 DDIT")
+						.param("zipcode", "34940")
+						.param("pass", "sally1234"))
+			.andExpect(status().is(302));
+	}
 }

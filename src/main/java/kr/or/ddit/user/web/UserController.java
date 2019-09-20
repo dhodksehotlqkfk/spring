@@ -16,6 +16,7 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RequestPart;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -242,4 +243,39 @@ public class UserController {
 		}
 	}
 	
+	@RequestMapping(path = "userPagingListAjaxView")
+	public String userPagingListAjaxView() {
+		return "user/userPagingListAjaxView";
+	}
+	
+	@RequestMapping(path = "userPagingListAjax", method = RequestMethod.GET)
+	public String userPagingListAjax(Model model, Page page) {
+		
+		model.addAttribute("pageVo", page);
+		
+		Map<String, Object> resultMap = userService.getUserPagingList(page);
+		model.addAllAttributes(resultMap);
+		
+		return "jsonView";
+	}
+	
+	/**
+	* Method : userPagingListHtmlAjax
+	* 작성자 : PC-02
+	* 변경이력 :
+	* @return
+	* Method 설명 : 사용자 페이징 리스트의 결과를 html로 생성한다 (jsp)
+	*/
+	@RequestMapping("userPagingListHtmlAjax")
+	public String userPagingListHtmlAjax(@RequestParam(defaultValue = "1") int page,
+										 @RequestParam(defaultValue = "10") int pagesize,
+										 Model model) {
+		
+		Page pageVo = new Page(page, pagesize);
+		Map<String, Object> resultMap = userService.getUserPagingList(pageVo);
+		model.addAllAttributes(resultMap);
+		model.addAttribute("pageVo", pageVo);
+		
+		return "user/userPagingListHtmlAjax";
+	}
 }
