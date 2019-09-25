@@ -104,13 +104,24 @@ public class UserController {
 		Map<String, Object> resultMap = userService.getUserPagingList(page);
 		model.addAllAttributes(resultMap);
 		
-		return "user/userPagingList";
+		//return "user/userPagingList";	 //internalResourceViewResolver를 통한 응답
+		return "tiles.userPagingList";
+		
+		// viewResolver order에 따라
+		/* 1. tilesViewResolver가 tiles definition 파일 중에
+		 * 	  viewName과 일치하는 definition 이름을 검색
+		 * 	  1-1. 검색이 될 경우 해당 definition을 이용하여 응답생성
+		 * 	  1-2. 검색이 안될 경우 다음 우선순위를 갖는 viewResolver가 처리
+		 * 2. beanNameViewResolver
+		 * 3. internalResourceViewResolver
+		 */
 	}
 	
 	@RequestMapping(path = "user", method = RequestMethod.GET)
 	public String userDetailView(Model model, String userId) {
 		model.addAttribute("user", userService.getUser(userId));
-		return "user/user";
+		//return "user/user";
+		return "tiles.user";
 	}
 	
 	@RequestMapping(path = "userPicture", method = RequestMethod.GET)
