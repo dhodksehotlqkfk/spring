@@ -9,14 +9,12 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.IOException;
 
 import org.junit.Test;
 import org.springframework.mock.web.MockMultipartFile;
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.web.servlet.ModelAndView;
 
-import kr.or.ddit.common.model.Page;
 import kr.or.ddit.config.test.WebTestConfig;
 
 public class UserControllerTest extends WebTestConfig{

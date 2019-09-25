@@ -76,6 +76,24 @@ function getUserHtmlList(page, pagesize){
 	});
 }
 
+function getUserListRequestBody(page, pagesize){
+	var param = {};
+	param.page = page;
+	param.pagesize = pagesize;
+	console.log("param : " + param);
+	$.ajax({
+		url : "${cp}/user/userPagingListAjaxRequestBody",
+		contentType : "application/json",
+		dataType : "json",
+		method : "post",
+		data : JSON.stringify(param),
+		success : function(data){
+			createUserListTbody(data.userList);	//userList html 생성
+			createPagination(data.pageVo, data.paginationSize);	//페이지 네이션 html생성
+		}
+	});
+}
+
 //ajax call을 통해 page, pagesize 하는 사용자
 //데이터를 가져온다
 function getUserList(page, pagesize) {
